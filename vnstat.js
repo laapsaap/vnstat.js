@@ -36,7 +36,7 @@ function map_url(netdev, index, array){
 vnstat_path = '/var/lib/vnstat'
 fs.readdir(vnstat_path, function(err1, files){
 
-	function redirect(response){
+	function redirect(path, response){
 		response.writeHead(302, {
 		'Location': '/'+files[0]+'/'
 		});
