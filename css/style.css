@@ -16,7 +16,7 @@ dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup, sidebar,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -29,7 +29,7 @@ time, mark, audio, video {
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
-footer, sidebar, header, hgroup, menu, nav, section {
+footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 
@@ -66,20 +66,21 @@ body {
 	color: white;
 }
 
-sidebar {
-	position:absolute;
-	left: 50%;
-	text-align:right;
-	margin: 50px 0 0 -500px ;
-	width: 200px;
+#sidebar {
+	width: 230px;
+	float:left;
 }
 
 header {
 	text-align: center;
 	margin: 10px 0 10px 0;
 }
-
+#main{
+	margin-left: 250px;
+}
 #container {
+	width: 1024px;
+	margin: 0 auto;
 }
 
 footer {
@@ -103,21 +104,23 @@ header li {
 	margin-left: 20px;
 }
 
-sidebar li {
+#sidebar li {
+	text-align:center;
 	list-style: none;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	margin-left: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#sidebar li .button{
+	display:block;
 }
 
 #graph {
-	text-align: center;
-	margin-top: 40px;
+	margin-top: 20px;
 }
 
 #text {
-	text-align: center;
-	margin-top: 40px;
+	margin-top: 20px;
 }
 
 /**********/
